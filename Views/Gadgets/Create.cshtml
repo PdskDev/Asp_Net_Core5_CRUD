@@ -1,0 +1,23 @@
+@model Crud_tuto2.Data.Entities.Gadgets
+
+<div>
+    <form asp-action="create" method="post">
+        <div class="mb-3">
+            <label for="textProductName" class="form-label">Product name</label>
+            <input type="text" asp-for="ProductName" class="form-control" id="textProductName">
+        </div>
+        <div class="mb-3">
+            <label for="textBrand" class="form-label">Brand</label>
+            <input type="text" asp-for="Brand" class="form-control" id="textBrand">
+        </div>
+        <div class="mb-3">
+            <label for="textCost" class="form-label">Cost</label>
+            <input type="text" asp-for="Cost" class="form-control" id="textCost">
+        </div>
+        <div class="mb-3">
+            <label for="textType" class="form-label">Type</label>
+            <input type="text" asp-for="Type" class="form-control" id="textType">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
